@@ -1,0 +1,273 @@
+/* Omnifood css (Updated Course) 
+
+--- 01 TYPOGRAPHY
+
+
+
+--- 02 COLORS
+Brand color: #e67e22
+rgb(71, 71, 71);
+Tints:
+Shades: 
+BG #fdf2e9
+rgb(228, 110, 110);
+
+Grey: #666
+
+--- 03 SHADOWS
+
+
+--- 04 BORDER RADIUS
+
+--- 07 WHITE SPACE
+-----------------------------------------------------------
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: airal, sans-serif;
+    line-height: 1;
+    font-weight: 700;
+    color: rgb(71, 71, 71);
+
+
+}
+
+/* ----------------------------------------------- */
+/* --- NAVIGATION ------------------------------- */
+/* --------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: ;
+    align-items: flex-start;
+
+    height: 13rem;
+    padding: 2.6rem 2.6rem;
+
+    max-width: 110rem;
+    margin: 0 auto;
+    padding-left: 3rem;
+}
+
+.header-maindiv {
+    background-color: #fff1e0;
+
+}
+
+.logo {
+    transform: translate(0%,-15%);
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+    height: 200%;
+    padding-right: 8rem;
+    padding-left: 10rem;
+
+}
+
+.mainnav rightof {
+    /* justify-self: center; */
+    padding-right: 25rem;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.mainnav {
+    align-self: center;
+}
+.mainnav-ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+
+
+}
+
+.mainnav-ul li a:link,
+.mainnav-ul li a:visited {
+    font-family: century;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 3px solid transparent; 
+    transition: padding-bottom 0.2s;
+
+}
+
+.mainnav-ul li a:hover,
+.mainnav-ul li a:active {
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #e46e6e; 
+} 
+
+
+/* --------------------------------------------- */
+/* --- HEADER ---------------------------------- */
+/* --------------------------------------------- */
+
+.header-section {
+    background-color: #fff1e0;
+
+    /* fdf8e9 */
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 110rem;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.header-title-description {
+    padding-left: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+}
+
+.header-img {
+    width: 100%;
+}
+
+h1 {
+    display: inline-block;
+    font-family: century;
+    font-size: 6.2rem;
+    cursor:default ;
+
+    transform: translate(0%, 0%);
+    padding: -10px;
+
+    transition: transform 0.2s;
+}
+.h1jumping {
+    display: inline-block;
+    margin-bottom: 3.6rem;
+}
+
+h1:hover,
+h1:active {
+    transform: translate(0%, -30%);
+}
+
+/* h1:hover:hover {
+    font-family: century;
+    font-size: 6.2rem;
+    margin-bottom: 3.6rem;
+    transform: translate(-50%, -50%);
+} */
+
+
+
+.header-text {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-bottom: 4.4rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.btn-recipies:link,
+.btn-recipies:visited {
+    font-family: century, serif;
+
+    display: inline-block;
+    background-color: rgb(228, 110, 110);
+    text-decoration: none;
+    color: white;
+    padding: 1.6rem 3.5rem;
+    font-size: 2.5rem;
+
+    box-shadow: 1px 1px 2px 1px rgba(71, 71, 71, 0.644);
+    transition: transform 0.04s;
+
+}
+
+.btn-recipies:hover,
+.btn-recipies:active {
+    display: inline-block;
+    background-color: rgb(228, 110, 110);
+    text-decoration: none;
+    color: white;
+    padding: 1.6rem 3.5rem;
+    font-size: 2.5rem;
+    transform: scale(1.0);
+    box-shadow: inset 0px 0px 0px 2px rgba(71, 71, 71, 0.459);
+    text-shadow: 3px 3px 2px rgba(71, 71, 71, 0.336);
+
+}
+
+.maring-right-sm {
+    margin-right: 2rem !important;
+}
+
+
+
+/* --------------------------------------------- */
+/* --- GRID REUSABLE --------------------------- */
+/* --------------------------------------------- */
+
+.section-how {
+    padding: 9rem 0;
+    background-color: orange;
+}
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid-2col {
+    grid-template-columns: repeat(2, 1fr) ;
+}
+
+.grid-3col {
+    grid-template-columns: repeat(3, 1fr) ;
+}
+
+.grid-4col {
+    grid-template-columns: repeat(4, 1fr) ;
+}
+
+.section-how div {
+    padding: 100px;
+    font-size: 30px;
+}
+.section-how div:nth-child(1) {
+    background-color: aqua;
+}
+.section-how div:nth-child(2) {
+    background-color: rgb(78, 76, 207);
+}
+.section-how div:nth-child(3) {
+    background-color: rgb(199, 75, 75);
+}
+.section-how div:nth-child(4) {
+    background-color: rgb(33, 63, 63);
+}
+
+
+/* --------------------------------------------- */
+/* --- GRID REUSABLE --------------------------- */
+/* --------------------------------------------- */
+
+
